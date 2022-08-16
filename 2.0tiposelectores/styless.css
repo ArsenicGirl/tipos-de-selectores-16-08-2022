@@ -1,0 +1,116 @@
+/*
+1. Selector por etiqueta: cambia estilo a todas las etiquetas en cuestion, se coloca directmente el nombre de la etiqueta
+                2. Selector por clase: cambia o modifica el estilo del elemento donde se menciona la clase el atributo class para crear un estilo por clase se coloca .nombreEstilo
+                3. Selector por identificador (id): modifica el estilo del elemento que posea el id
+                4. Selector universal
+*/
+/************************************************************************************************************************************************************************************/
+
+/*1. Por etiqueta*/
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    background-color: aquamarine;
+}
+
+/*
+2. Selector por clase o class
+*/
+.subtitulo{
+    font-family:'Times New Roman', Times, serif ;
+    text-align: center;
+    color: bisque;
+    background-color: black;
+
+/*
+3. Selector por ID
+*/
+}
+#info{
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    color: #66CDAA;
+    padding: 100px;
+
+}
+/*
+4. selector por atributo
+*/
+
+[class]{
+    /* se aplicará a todos los elementos que tengan atributo class*/
+background-color:#66CDAA;
+
+}
+/*combinadores*/
+
+a[href]{
+    text-align:right;
+    margin-left: 5%;
+    color:rgb(34, 0, 255);
+}
+
+/*Utilizando sufijos*/
+a[href$=".com"]{
+    margin-left: 5%;
+    color: rgb(165, 42, 120);
+}
+/*utilizando prefijos*/
+[class^="as"]{
+    font-size: 20px;;
+}
+
+/*punto 1 ejemplo donde se seleccione solamente al hermano siguiente (permite seleccionar un elemento HTML que viene inmediatamente después de otro elemento HTML)*/
+h6{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin-left: 2%;
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+h6+p{
+    color:rgb(166, 0, 255);
+    font-size: 25px;
+    margin-left: 2%;
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+
+/*punto 2 ejemplo donde se seleccionen todos los hermanos siguientes*/
+h7{
+    font-size: 40px;
+    margin-left: 2%;
+    font-weight: 200;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(29, 197, 135);
+}
+h7~p{ 
+    color:rgb(0, 17, 255); 
+    font-size:25px;
+    background-color: white;
+    font-weight: 8;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*punto 3 ejemplo de agrupacion de selectores (sirve para combinar mas de dos selectores)*/
+h3,h4,h5{
+    color: rgb(255, 108, 169);
+    font-size: 20px;
+    margin-left: 5%;
+    font-weight: 200;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+/*punto 4 ejemplo de decendencia directa*/
+a[href="#lin"]{
+    font-size: 30px;
+    text-align:right;
+    margin-left: 0%;
+    color:rgb(0, 0, 0);
+    background-color: bisque;
+}
+
+
